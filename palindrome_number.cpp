@@ -15,9 +15,6 @@ public:
             sum = sum*10+x%10;
             x /= 10;
         }
-        if (sum == xtemp)
-            return true;
-        else
-            return false;
+        return (sum == xtemp);
     }
 };
