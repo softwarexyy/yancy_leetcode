@@ -1,3 +1,4 @@
+//寻找新数组中相邻项在原数组中的下表递增规律
 class Solution {
 public:
     string convert(string s, int numRows) {
