@@ -18,3 +18,20 @@ public:
         return (sum == xtemp);
     }
 };
+
+/*******   this is another method *********
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        int result = 0;
+        int num = x;
+        while (num>0){
+            int tmp = result;
+            result = result*10 + num%10;
+            if ((result/10)!=tmp) return false; //will return false if overflow
+            num/=10;
+        }
+        return result==x;
+    }
+};
+*/
