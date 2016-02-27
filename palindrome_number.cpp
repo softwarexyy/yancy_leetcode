@@ -19,7 +19,7 @@ public:
     }
 };
 
-/*******   this is another method *********
+/*******   this is another method *********/
 class Solution {
 public:
     bool isPalindrome(int x) {
@@ -34,4 +34,4 @@ public:
         return result==x;
     }
 };
-*/
+
