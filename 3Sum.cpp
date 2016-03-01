@@ -10,13 +10,11 @@ public:
             int q = nums.size()-1;
             while (p<q){
                 int tempSum = nums[i]+nums[p]+nums[q];
-                if (tempSum < 0){
+                if (tempSum < 0)
                     p++;
-                }
-                if (tempSum > 0){
+                else if (tempSum > 0)
                     q--;
-                }
-                if (tempSum == 0) {      //  其中一个正解
+                else {      //  其中一个正解
                     vector<int> temp;
                     temp.push_back(nums[i]);
                     temp.push_back(nums[p]);
