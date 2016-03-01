@@ -22,7 +22,7 @@ public:
                     temp.push_back(nums[p]);
                     temp.push_back(nums[q]);
                     res.push_back(temp);
-                    while (nums[p+1]==nums[p])
+                    while (nums[p+1]==nums[p])  //如果下个nums[p]与本次循环相同，则跳过，直到不相同为止
                         p++;
                     p++;
                 }
