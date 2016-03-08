@@ -24,9 +24,9 @@ public:
             q->next = p->next;
             p->next = q;
             
-            if (q->next->next == NULL)
+            if (q->next->next == NULL)          //不能再继续往后面走了
                 break;
-            if (q->next->next->next == NULL)
+            if (q->next->next->next == NULL)    //不能再继续往后面走了
                 break;
 
             p = q->next;
