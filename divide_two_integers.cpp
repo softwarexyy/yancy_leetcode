@@ -19,6 +19,6 @@ public:
             res += count;
             dividend1 -= (temp>>1);
         }
-        return (int)negative? -res : res;
+        return negative? -res : res;
     }
 };
