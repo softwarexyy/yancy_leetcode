@@ -1,7 +1,7 @@
 class Solution {
 public:
     int divide(int dividend, int divisor) {
-        if(divisor==0 || (dividend==INT_MIN && divisor==-1))   //当dividend=-2147483648(INT_MIN)时，且divisor=-1时，得出的答案2147483838是溢出的(>INT_MAX)
+        if(divisor==0 || (dividend==INT_MIN && divisor==-1))   //当dividend=-2147483648(INT_MIN)时，且divisor=-1时，得出的答案2147483648是溢出的(>INT_MAX)
             return INT_MAX;
         int res = 0;
         bool negative = false;
