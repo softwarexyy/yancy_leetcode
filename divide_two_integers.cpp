@@ -8,7 +8,7 @@ public:
         if((dividend<0&&divisor>0) || (dividend>0&&divisor<0))
             negative = true;
         
-        long long dividend1=abs((long long)dividend);   //考虑对最大最小整数取模的情况
+        long long dividend1=abs((long long)dividend);   //使用longlong类型, 暂不考虑int溢出的问题
         long long divisor1=abs((long long)divisor);
         long long temp = 0;
         while(divisor1 <= dividend1){
