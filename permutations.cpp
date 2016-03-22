@@ -6,11 +6,11 @@ public:
 
         for (int i=0; i<nums.size(); i++){
             vector<int> tmpres_tmp = tmpres;    //为了防止几次循环改变tmpres和nums(在选取不同的头部元素时，tmpres和nums是不允许被改变的)
-            vector<int> numstmp = nums;
+            vector<int> nums_tmp = nums;
             
             tmpres_tmp.push_back(nums[i]);
-            numstmp.erase(numstmp.begin() + i);   //delete the element to go on next recursion
-            mypermute(numstmp, res, tmpres_tmp);
+            nums_tmp.erase(nums_tmp.begin() + i);   //delete the element to go on next recursion
+            mypermute(nums_tmp, res, tmpres_tmp);
         }
     }
     
