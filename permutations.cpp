@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void mypermute(vector<int> nums, vector<vector<int>>& res, vector<int> tmpres){    //tmpres是上一次遗留的头部,res是最终结果
+    void mypermute(vector<int>& nums, vector<vector<int>>& res, vector<int>& tmpres){    //tmpres是上一次遗留的头部,res是最终结果
         if (nums.empty())
             res.push_back(tmpres);
 
