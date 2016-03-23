@@ -26,3 +26,8 @@ public:
         return res;
     }
 }
+
+
+
+//方法：
+//  参考permutation题
